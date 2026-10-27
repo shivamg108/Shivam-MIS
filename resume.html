@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Gupta - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0056b3;
+            --text-color: #222222;
+            --bg-color: #ffffff;
+        }
+
+        body.resume-page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+            padding: 20px 20px 20px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px 25px 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        .resume-header h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .resume-header p {
+            color: #444;
+            margin: 4px 0 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 4px 0 0;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .resume-section {
+            margin-bottom: 7px;
+        }
+
+        .resume-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        .resume-item {
+            margin-bottom: 7px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .item-header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2px;
+        }
+
+        .item-header-table td {
+            padding: 0;
+            vertical-align: baseline;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #111;
+            font-size: 0.98rem;
+            text-align: left;
+        }
+
+        .item-date {
+            color: #555;
+            font-style: italic;
+            font-size: 0.85rem;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .resume-item .job-title {
+            color: #444;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        .resume-item ul {
+            margin: 3px 0 0 18px;
+            padding: 0;
+        }
+
+        .resume-item li {
+            margin-bottom: 3px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .skill-category {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .skill-category strong {
+            color: var(--primary-color);
+            font-size: 0.92rem;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004494;
+        }
+
+        @media print {
+            @page {
+                margin: 4mm 1mm;
+                size: A4;
+            }
+
+            body.resume-page {
+                background: white !important;
+                color: black !important;
+                padding: 6mm 12mm 10mm 12mm !important;
+                max-width: 100% !important;
+            }
+
+            .container {
+                box-shadow: none !important;
+                padding: 0 !important;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            h2,
+            h3 {
+                break-after: avoid;
+            }
+
+            .resume-item {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body class="resume-page">
+
+    <div class="container">
+        <div class="resume-header">
+            <h1>Shivam Gupta</h1>
+            <p>Senior MIS & Operations Analyst | JavaScript, Apps Script & Workflow Automation Specialist</p>
+            <div class="contact-info">
+                <a href="tel:+918108383003"><i class="fas fa-phone"></i> +91 8108383003</a>
+                <a href="mailto:shivamg8355@gmail.com"><i class="fas fa-envelope"></i> shivamg8355@gmail.com</a>
+                <a href="https://wa.me/8108383003" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://shivam-mis.vercel.app/" target="_blank"><i class="fas fa-globe"></i> Explore Portfolio:
+                    shivam-mis.vercel.app</a>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Professional Summary</h2>
+            <p style="margin: 0; text-align: justify;">
+                Dynamic MIS Analyst & Workflow Automation Specialist with 6+ years of versatile cross-functional
+                experience across Data Engineering, Operations Management, and Technical Support. Proven expertise in
+                architecting scalable automation pipelines utilizing <strong>JavaScript (ES6+), Google Apps Script
+                    (Sheets/Gmail/Drive APIs), Web Macros, and Excel VBA</strong>. Specialized in <strong>PostgreSQL
+                    database architecture for saving operational parameter data</strong>, dynamic threshold
+                configurations, and <strong>AI-integrated Power BI MIS reporting suites</strong> across HRA (HR
+                Analytics), Sales pipelines, and Store Inventory, reducing recurring manual operational reporting hours
+                by 95%+.
+            </p>
+        </div>
+
+        <div class="resume-section">
+            <h2>Technical Skills & Automation Toolkits</h2>
+            <div class="skill-category">
+                <strong>Automation & Scripting:</strong> JavaScript (ES6+, DOM Automation, Tampermonkey Web Macros, Web
+                Scraping, REST APIs),
+                Google Apps Script (Cloud Triggers, Google Sheets/Gmail/Drive API, Automated PDF Dispatcher), Advanced
+                Excel VBA (Macros, Power Query M-Code, Scripting.Dictionary In-Memory Hash Reconciler), Python (Pandas,
+                NumPy, Automated ETL Pipelines, Google Gemini AI API).
+            </div>
+            <div class="skill-category">
+                <strong>Business Intelligence & Data:</strong> Power BI (Interactive Operational Dashboards, DAX
+                Measures, AI Visuals), PostgreSQL Database (Saving Operational Parameter Data, Dynamic Threshold
+                Configurations, Parameter Audit Triggers, Complex SQL Validation Queries, Stored Procedures), Advanced
+                MS Excel (XLOOKUP, Dynamic Arrays, Pivot Tables, Model Design).
+            </div>
+            <div class="skill-category">
+                <strong>Productivity & IT Operations:</strong> MS Office Suite (Word, Excel, PowerPoint), Git (Version
+                Control), Network Infrastructure Maintenance, System Troubleshooting, Hardware/Software Deployment.
+            </div>
+            <div class="skill-category">
+                <strong>Operations & Domain Portfolios:</strong> Multi-Department MIS (HR Analytics, Sales Funnel, Store
+                Inventory & Assets, Order Processing, Factory Yield), B2B Enterprise Client Relations, B2C Outreach,
+                Supply Chain Tracking & Machinery Audit.
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Work Experience</h2>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">AUFINJA</td>
+                        <td class="item-date">2025 - Present</td>
+                    </tr>
+                </table>
+                <div class="job-title">Data Operator & Operations Analyst</div>
+                <ul>
+                    <li><strong>Multi-Department Data Portfolio:</strong> Centralize and maintain operational data
+                        portfolios across HR, Sales, Order Processing, and Factory/Production outputs.</li>
+                    <li><strong>PostgreSQL Parameter & Query Management:</strong> Architect and maintain PostgreSQL
+                        database tables to save and manage operational parameter data (attendance anomaly caps, sales
+                        quotas, and inventory reorder buffers), executing high-volume SQL validation and automated audit
+                        logging triggers.</li>
+                    <li><strong>MIS & Daily Reporting:</strong> Design and present daily performance dashboards and
+                        status reports for executive management to track business KPIs.</li>
+                    <li><strong>Inventory & Asset Management:</strong> Oversee real-time inventory tracking,
+                        reconciliation, stock logs, and factory supply chain data.</li>
+                    <li><strong>Technical & IT Support:</strong> Provide hands-on IT support, network maintenance
+                        assistance, and hardware/software setup.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">RELIANCE JIO</td>
+                        <td class="item-date">3 Years (2021 - 2024)</td>
+                    </tr>
+                </table>
+                <div class="job-title">Field Support Executive (FSE) [B2B Sales & Operations]</div>
+                <ul>
+                    <li><strong>B2B Relationship Management:</strong> Visited retail outlets and enterprise clients to
+                        build long-term business relationships and boost product distribution.</li>
+                    <li><strong>Retail Enablement & Guidance:</strong> Educated store managers and outlet teams on
+                        product selling techniques and pitch positioning.</li>
+                    <li><strong>Supply Chain Coordination:</strong> Monitored inventory flow at outlet levels, collected
+                        market feedback, and updated backend sales logs.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">RELIANCE JIO</td>
+                        <td class="item-date">0.6 Years / 6 Months (2020 - 2021)</td>
+                    </tr>
+                </table>
+                <div class="job-title">Senior Operations Officer (SHO) [B2C Direct Sales & Events]</div>
+                <ul>
+                    <li><strong>Direct B2C Lead Generation:</strong> Drove direct-to-consumer sales through ground-level
+                        activities, event setups, and door-to-door outreach.</li>
+                    <li><strong>Campaign Execution:</strong> Planned and executed promotional field campaigns outside
+                        traditional store environments.</li>
+                    <li><strong>Lead Pipeline Closure:</strong> Managed end-to-end lead conversion and customer
+                        onboarding documentation.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">RELIANCE JIO</td>
+                        <td class="item-date">1 Year (2019 - 2020)</td>
+                    </tr>
+                </table>
+                <div class="job-title">Executive Data Support System / Promoter (XDSS) [B2C Outlet Promotion]</div>
+                <ul>
+                    <li><strong>Outlet Sales Promotion:</strong> Actively promoted product offerings inside assigned
+                        retail outlets to maximize engagement.</li>
+                    <li><strong>Lead Generation & Prospecting:</strong> Identified potential retail buyers, pitched
+                        product advantages, and closed sales targets.</li>
+                    <li><strong>Data Entry & Daily Logging:</strong> Reported daily footfall, customer inquiries, and
+                        sales metrics into the backend system.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Interactive Power BI MIS Showcase & Portfolios</h2>
+            <p style="margin: 0 0 8px 0; font-size: 0.9rem; font-weight: 600; color: #333;">
+                <i class="fas fa-external-link-alt" style="color: var(--primary-color);"></i> Explore my work:
+                <a href="https://shivam-mis.vercel.app/" target="_blank"
+                    style="color: var(--primary-color); text-decoration: underline;">shivam-mis.vercel.app</a>
+            </p>
+            <div class="resume-item">
+                <div class="job-title">Multi-Department Power BI & Data Analytics Suite</div>
+                <ul>
+                    <li><strong>PostgreSQL Parameter Integration:</strong> Engineered centralized parameter tables in
+                        PostgreSQL to save and manage operational thresholds and reporting rules, powering dynamic recalculations
+                        across Power BI and automation scripts.</li>
+                    <li><strong>HR Department Portfolio:</strong> Built interactive staff attendance & performance audit
+                        dashboards tracking 96.4% avg attendance and leave caps.</li>
+                    <li><strong>Sales Department Portfolio:</strong> Modeled monthly deal closures and lead pipeline
+                        metrics (450+ leads, 182 deals closed, 40.4% conversion rate).</li>
+                    <li><strong>Store Inventory Portfolio:</strong> Developed real-time asset tracking and maintenance
+                        audit systems for 480 store units across IT hardware and equipment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Key Highlights & Core Competencies</h2>
+            <div class="resume-item">
+                <ul>
+                    <li>6+ Years of cross-functional experience spanning Data Management, Field Operations, B2B/B2C
+                        Sales Execution, and Technical Support.</li>
+                    <li>Proven track record of maintaining 99.99% data accuracy across multi-department portfolios (HR,
+                        Sales, Orders, Factory, Inventory).</li>
+                    <li>Expertise in PostgreSQL relational databases for saving parameter data, schema design, complex
+                        SQL validation, Power BI visual dashboarding, and Advanced MS Excel (XLOOKUP, Pivot Tables, Macros).</li>
+                    <li>Dual domain expertise combining Information Technology (B.Sc. IT) with hands-on mechanical
+                        operations (ITI Diesel Mechanic).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2>Education & Credentials</h2>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">B.Sc. IT (Bachelor of Science in Information Technology)</td>
+                        <td class="item-date">CGPA 6.89 | 2022 - 2025</td>
+                    </tr>
+                </table>
+                <div class="job-title">Chandrabhan Sharma College, Powai (Mumbai University)</div>
+                <ul>
+                    <li>Specialization: Software Development, Database Management Systems (DBMS), and System
+                        Architecture.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">ITI in Diesel Mechanic</td>
+                        <td class="item-date">Score: 75.00% | 2021 - 2022</td>
+                    </tr>
+                </table>
+                <div class="job-title">Government ITI, Byculla</div>
+                <ul>
+                    <li>Specialization: Technical Operations, Mechanical Systems, Preventive Maintenance, and Machinery
+                        Audit.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">Higher Secondary Certificate (HSC - 12th Commerce)</td>
+                        <td class="item-date">Score: 55.40% | 2020</td>
+                    </tr>
+                </table>
+                <div class="job-title">Vidya Niketan Jr. College, Ghatkopar (Maharashtra State Board)</div>
+                <ul>
+                    <li>Specialization: Mathematics, Information Technology (IT), and Commerce.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <table class="item-header-table">
+                    <tr>
+                        <td class="item-title">Secondary School Certificate (SSC - 10th Standard)</td>
+                        <td class="item-date">Score: 59.20% | 2018</td>
+                    </tr>
+                </table>
+                <div class="job-title">VPS High School (Maharashtra State Board)</div>
+                <ul>
+                    <li>Specialization: Secondary Certificate, General Studies.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="no-print"
+        style="text-align:center; margin:20px 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <a href="https://shivam-mis.vercel.app/" target="_blank" class="btn" style="background-color: #28a745;">
+            <i class="fas fa-external-link-alt"></i> Explore My Work
+        </a>
+        <a href="Shivam Gupta Resume.pdf" download="Shivam Gupta Resume.pdf" class="btn"
+            style="background-color: #0056b3;">
+            <i class="fas fa-download"></i> Download PDF
+        </a>
+        <button onclick="window.print()" class="btn">
+            <i class="fas fa-file-pdf"></i> Print Resume
+        </button>
+    </div>
+
+</body>
+
+</html>
